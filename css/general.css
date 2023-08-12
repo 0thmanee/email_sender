@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #2d9bd2;
+  --p-color: #9e9e9e;
+  --bcg-color: #171d34;
+  --bcg-color2: #1d233c;
+  --section-padding: 9rem;
+  --main-line-height: 1.5;
+  --main-transition: 0.3s;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  background-color: var(--bcg-color);
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+input {
+  outline: none;
+  border: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* SMALL DEVICES: 768px */
+@media (min-width: 48em) {
+  .container {
+    width: 75rem;
+  }
+}
+/* MEDIUM DEVICES: 992px */
+@media (min-width: 62em) {
+  .container {
+    width: 97rem;
+  }
+}
+@media (max-width: 70em) {
+}
+/* LARGE DEVICES: 1200px */
+@media (min-width: 75em) {
+  .container {
+    width: 117rem;
+  }
+}

@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.send_btn {
+  background-color: var(--primary-color);
+  padding: 3rem;
+  border-radius: 1rem;
+  font-size: 3.6rem;
+  cursor: pointer;
+}
+.send_btn:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
