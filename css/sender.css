@@ -1,5 +1,6 @@
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -11,8 +12,18 @@ main {
   border-radius: 1rem;
   font-size: 3.6rem;
   cursor: pointer;
+  margin-bottom: 3.6rem;
 }
 .send_btn:hover {
   background-color: #fff;
   color: var(--primary-color);
+}
+
+.email_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
 }

@@ -1,6 +1,7 @@
 let mails = [];
 let currentIndex = 0;
 const btn = document.querySelector(".send_btn");
+const email_input = document.querySelector(".email");
 
 const extractName = function (email) {
   const atIndex = email.indexOf("@");
@@ -108,15 +109,16 @@ const sendNextEmail = async function () {
   if (currentIndex < mails.length) {
     try {
       await sendEmail(mails[currentIndex]);
-      console.log(`Email sent to ${mails[currentIndex]}`);
+      email_input.textContent = `Email sent to ${mails[currentIndex]}`;
     } catch (error) {
+      email_input.textContent = `Error sending email`;
       console.error(`Error sending email to ${mails[currentIndex]}:`, error);
     } finally {
       currentIndex++;
       sendNextEmail();
     }
   } else {
-    console.log("All emails sent");
+    email_input.textContent = `All emails sent`;
     btn.innerText = "Send Now!";
   }
 };
