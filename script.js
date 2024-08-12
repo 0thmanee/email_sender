@@ -17,9 +17,11 @@ const extractName = function (email) {
 const sendEmail = function (emailAdress) {
   return new Promise((resolve, reject) => {
     Email.send({
-      SecureToken: "0c863a8d-50ea-419e-86de-0791a546954c",
-      To: emailAdress,
-      From: "contact@bugbeat.tech",
+      Host : "smtp.elasticemail.com",
+      Username : "almostaqbalksa@gmail.com",
+      Password : "C7F791F505CA9D2B7A61FB01CDB759D399D0",
+      To: "othmanebouchtaa@gmail.com",
+      From: "almostaqbalksa@gmail.com",
       Subject: "Join BugBeat's Bug Bounty Program",
       Body: `<!DOCTYPE html>
 <html>
